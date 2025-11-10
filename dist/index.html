@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="flex flex-col items-center bg-black overflow-x-hidden">
+
+    <div class="w-screen h-screen flex flex-col items-center justify-center relative">
+    <!-- BACKGROUND IMAGE -->
+    <div class="w-full h-full absolute top-0 left-0">
+        <img class="w-full h-full object-cover" src="images/bg.jpg">
+    </div>
+    <!-- BACKGROUND IMAGE END -->
+
+        <!-- OVERLAY -->
+        <div class="overlay absolute z-1 top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.6)]"></div>
+        <!-- OVERLAY END -->
+
+        <!-- NAV START -->
+        <div class="nav relative z-10 w-full">
+            <nav class="w-[80%] items-center h-[10vh] flex justify-between mx-auto max-[507px]:w-full max-[507px]:px-2 max-[250px]:flex-col max-[250px]:items-start max-[250px]:h-auto max-[250px]:justify-center">
+                <div class="logo">
+                    <img src="images/netflix.png" class="w-36" alt="NETFLIX LOGO">
+                </div>
+                <button
+                    class="bg-red-600 text-3 text-white text-4 py-2 px-3 rounded-lg font-medium cursor-pointer hover:bg-red-700 duration-300">Sign
+                    In</button>
+            </nav>
+        </div>
+        <!-- NAV END -->
+
+        <!-- FRONT SECTION START -->
+        <section class="main z-10 w-full h-full flex flex-col justify-center items-center text-white border-b-6 border-gray-900">
+
+            <p class="text-6xl font-bold text-center leading-18 max-[640px]:text-4xl max-[640px]:leading-10">
+                Unlimited movies, TV<br>shows, and more
+            </p>
+
+            <p class="my-5 text-[20px] font-medium text-wrap text-center">
+                Starts at Rs 250. Cancel anytime.
+            </p>
+
+            <p class="mb-3 text-center text-wrap">
+                Ready to watch? Enter your email to create or restart your membership.
+            </p>
+
+            <p class="flex items-center justify-center gap-x-2 max-[628px]:flex-col max-[628px]:gap-y-3 max-[628px]:gap-x-0">
+                <input class="bg-[rgba(0,0,0,0.6)] text-white font-medium py-4 border border-[rgba(255,255,255,0.4)] w-[400px] max-[507px]:w-[90vw] rounded-sm placeholder:text-white/80 placeholder:font-normal pl-3"
+                    type="email" name="email" id="emailBox" placeholder="Email address">
+
+                <button class="capitalize bg-red-600 hover:bg-red-700 duration-300 cursor-pointer h-full font-medium text-2xl px-[35px] rounded-sm max-[628px]:h-[58px]">
+                    get started
+                </button>
+            </p>
+
+        </section>
+        <!-- FRONT SECTION END -->
+    </div>
+
+    </div>
+    <!-- TRENDING SECTION -->
+    <section id="trendingSection" class="w-[80%] my-30 gap-x-3 justify-evenly flex bg-black relative ">
+
+        <h1 class="text-white text-2xl font-medium absolute -top-15 left-0">Trending Now</h1>
+
+        <figure><img class="hover:scale-105 object-cover  duration-300 cursor-pointer rounded-lg" src="images/image1.webp"></figure>
+        <figure><img class="hover:scale-105 object-cover duration-300 cursor-pointer rounded-lg" src="images/image2.webp"></figure>
+        <figure><img class="hover:scale-105 object-cover duration-300 cursor-pointer rounded-lg" src="images/image3.webp"></figure>
+        <figure><img class="hover:scale-105 object-cover duration-300 cursor-pointer rounded-lg" src="images/image4.webp"></figure>
+    </section>
+    <!-- TRENDING SECTION END -->
+
+    <!-- REASON SECTION -->
+    <section class="heroSection relative w-[80%] text-white grid grid-cols-4 gap-4 max-[1150px]:grid-cols-2 max-[960px]:grid-cols-1">
+        <h1 class="absolute top-[-50px] left-0 text-2xl font-medium max-[320px]:static max-[320px]:top-0">More Reasons to Join</h1>
+        <div class="card duration-300 p-5">
+            <h1 class="text-2xl mb-5">Enjoy on your TV</h1>
+            <p class="opacity-65">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+            <i class=" absolute bottom-4 right-4"><img src="images/computer.png"></i>
+        </div>
+        <div class="card duration-300 p-5">
+            <h1 class="text-2xl mb-5">Download your shows to watch offline</h1>
+            <p class="opacity-65">Save your favorites easily and always have something to watch.</p>
+            <i class=" absolute bottom-4 right-4"><img src="images/down-right-arrow.png"></i>
+        </div>
+        <div class="card duration-300 p-5">
+            <h1 class="text-2xl mb-5">Watch everywhere</h1>
+            <p class="opacity-65">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+            <i class=" absolute bottom-4 right-4"><img src="images/vision.png"></i>
+        </div>
+        <div class="card duration-300 p-5">
+            <h1 class="text-2xl mb-2">Create profiles for kids</h1>
+            <p class="opacity-65">Send kids on adventures with their favorite characters in a space made just for them — free with your membership.</p>
+            <i class=" absolute bottom-4 right-4"><img src="images/user-profile.png"></i>
+        </div>
+    </section>
+    <!-- REASON SECTION END -->
+
+    <!-- QUESTION SECTION -->
+    <section class="questionSection flex flex-col gap-y-2 mt-20 w-[80%]">
+        <h1 class="font-medium text-2xl text-white mb-2">Frequently Asked Questions</h1>
+        <div class="row hover:bg-[#2D2D2D]">
+            <p>What is Netflix?</p>
+            <p><i class="fas fa-plus"></i></p>
+        </div>
+        <div class="row hover:bg-[#2D2D2D]">
+            <p>How much does Netflix cost?</p>
+            <p><i class="fas fa-plus"></i></p>
+        </div>
+        <div class="row hover:bg-[#2D2D2D]">
+            <p>Where can I watch?</p>
+            <p><i class="fas fa-plus"></i></p>
+        </div>
+        <div class="row hover:bg-[#2D2D2D]">
+            <p>How do i cancel?</p>
+            <p><i class="fas fa-plus"></i></p>
+        </div>
+        <div class="row hover:bg-[#2D2D2D]">
+            <p>What can I watch on Netflix?</p>
+            <p><i class="fas fa-plus"></i></p>
+        </div>
+        <div class="row hover:bg-[#2D2D2D]">
+            <p>Is Netflix good for kids?</p>
+            <p><i class="fas fa-plus"></i></p>
+        </div>
+    </section>
+    <!-- QUESTION SECTION END -->
+
+    <!-- LOWER EMAIL SECTION -->
+    <section class="emailSection w-[80%] my-7 text-white flex flex-col items-center gap-y-5">
+        <p class="leading-6">Ready to watch? Enter your email to create or restart your membership.</p>
+        <div class="second_Email_Box flex justify-center items-center w-full max-[760px]:flex-col max-[760px]:items-start max-[760px]:gap-y-4">
+            <input class="bg-[#0F0F0F] border w-[50%] border-[#5a5959]  py-4 pl-3 rounded-lg placeholder:text-[rgba(255,255,255,0.7)] max-[960px]:w-[70%] max-[760px]:w-full" type="email" id="EMAILBOX" placeholder="Email address">
+            <button class="hover:bg-[#d4111b] cursor-pointer text-2xl text-nowrap text-white duration-300 px-10 py-3 ml-2 bg-red-600 rounded-lg">Get started</button>
+        </div>
+    </section>
+    <!-- LOWER EMAIL SECTION END -->
+
+    <!-- FOOTER -->
+    <footer class="relative mt-15 mb-6 w-[80%] grid grid-cols-4 max-[960px]:grid-cols-2 max-[600px]:grid-cols-1 max-[600px]:gap-y-4">
+        <h1 class="absolute cursor-pointer top-[-60px] left-0 underline text-[#c8c8c8]">Questions? Contact us</h1>
+        <ul>
+            <a class="cursor-pointer" href="#">FAQ</a>
+            <a class="cursor-pointer" href="#">Investor Relations</a>
+            <a class="cursor-pointer" href="#">Privacy</a>
+            <a class="cursor-pointer" href="#">Speed Test</a>
+        </ul>
+
+        <ul>
+            <a class="cursor-pointer" href="#">Help Center</a>
+            <a class="cursor-pointer" href="#">Jobs</a>
+            <a class="cursor-pointer" href="#">Cookie Prefrences</a>
+            <a class="cursor-pointer" href="#">Legal Notices</a>
+        </ul>
+
+        <ul>
+            <a class="cursor-pointer" href="#">Account</a>
+            <a class="cursor-pointer" href="#">Ways to Watch</a>
+            <a class="cursor-pointer" href="#">Corporate Information</a>
+            <a class="cursor-pointer" href="#">Only on Netflix</a>
+        </ul>
+
+        <ul>
+            <a class="cursor-pointer" href="#">Media Center</a>
+            <a class="cursor-pointer" href="#">Terms of Use</a>
+            <a class="cursor-pointer" href="#">Contact Us</a>
+        </ul>
+    </footer>
+    <!-- FOOTER END -->
+    
+    <!-- LOWEST SECTION -->
+    <section class="lowestSection w-[80%] mt-10 mb-30 flex gap-y-7 flex-col items-start text-white">
+        <select class="border border-[#5a5959] rounded-md py-[3px] px-6">
+            <option class="outline outline-white" value="English">English</option>
+        </select>
+        <p class="text-[14px] text-[#a8a8a8]">Netflix Pakistan</p>
+        <p class="text-[13px] text-[#797979]">This page is protected by Google reCAPTCHA to ensure you're not a bot.
+            <a class="text-blue-500 text-[13px] underline" href="#Learn more">Learn more</a>
+        </p>
+    </section>
+    <!-- LOWEST SECTION END -->
+</body>
+</html>
