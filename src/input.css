@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@layer base{
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins',sans-serif;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(to right bottom, #192144,#210E18);
+        border-radius: 8px;
+        padding-block: 50px;
+        height:300px;
+        position: relative;
+    }
+    .card:hover{
+        transform: scale(1.03);
+    }
+    .heroSection i img{
+        width:50px;
+    }
+    footer ul{
+        display: flex;
+        flex-direction:column;
+        row-gap: 8px;
+        list-style:none;
+    }
+    footer a{
+        color:#c8c8c8;
+        text-decoration: underline;
+        font-size: 14px;
+    }
+}
+
+@layer components{
+    .row{
+        @apply w-full bg-[#1d1d1d] cursor-pointer py-6 px-5 flex justify-between text-2xl text-white;
+    }
+}
